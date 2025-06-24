@@ -3,7 +3,7 @@
 [![Runpod](https://api.runpod.io/badge/izzqz/fluxgym-noob)](https://console.runpod.io/hub/izzqz/fluxgym-noob)
 
 ```bash
-  curl https://raw.githubusercontent.com/izzqz/fluxgym-noob/refs/heads/main/install_and_run.sh | bash -s --
+curl https://raw.githubusercontent.com/izzqz/fluxgym-noob/refs/heads/main/install_and_run.sh | bash -s --
 ```
 
 Dead simple web UI for training FLUX LoRA **with LOW VRAM (12GB/16GB/20GB) support.**
@@ -117,11 +117,6 @@ Finally, install pytorch Nightly:
 
 ```bash
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-```
-
-Activate venv again
-```
-  
 ```
 
 **OR**, in case of NVIDIA RTX 50-series (5090, etc.) you will need to install cu128 torch and update bitsandbytes to the latest:
