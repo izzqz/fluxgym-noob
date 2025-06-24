@@ -1,4 +1,10 @@
-# Flux Gym
+# Flux Gym NOOB FRIENDLY RUNPOD DELUX EDITION
+
+[![Runpod](https://api.runpod.io/badge/izzqz/fluxgym-noob)](https://console.runpod.io/hub/izzqz/fluxgym-noob)
+
+```bash
+  curl https://raw.githubusercontent.com/izzqz/fluxgym-noob/refs/heads/main/install_and_run.sh | bash -s --
+```
 
 Dead simple web UI for training FLUX LoRA **with LOW VRAM (12GB/16GB/20GB) support.**
 
@@ -65,7 +71,7 @@ You can automatically install and launch everything locally with Pinokio 1-click
 
 First clone Fluxgym and kohya-ss/sd-scripts:
 
-```
+```bash
 git clone https://github.com/cocktailpeanut/fluxgym
 cd fluxgym
 git clone -b sd3 https://github.com/kohya-ss/sd-scripts
@@ -73,60 +79,52 @@ git clone -b sd3 https://github.com/kohya-ss/sd-scripts
 
 Your folder structure will look like this:
 
-```
 /fluxgym
   app.py
   requirements.txt
   /sd-scripts
-```
 
 Now activate a venv from the root `fluxgym` folder:
 
-If you're on Windows:
-
-```
-python -m venv env
-env\Scripts\activate
-```
-
-If your're on Linux:
-
-```
+```bash
 python -m venv env
 source env/bin/activate
 ```
 
 This will create an `env` folder right below the `fluxgym` folder:
 
-```
 /fluxgym
   app.py
   requirements.txt
   /sd-scripts
   /env
-```
 
 Now go to the `sd-scripts` folder and install dependencies to the activated environment:
 
-```
+```bash
 cd sd-scripts
 pip install -r requirements.txt
 ```
 
 Now come back to the root folder and install the app dependencies:
 
-```
+```bash
 cd ..
 pip install -r requirements.txt
 ```
 
 Finally, install pytorch Nightly:
 
-```
+```bash
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
-Or, in case of NVIDIA RTX 50-series (5090, etc.) you will need to install cu128 torch and update bitsandbytes to the latest:
+Activate venv again
+```
+  
+```
+
+**OR**, in case of NVIDIA RTX 50-series (5090, etc.) you will need to install cu128 torch and update bitsandbytes to the latest:
 
 ```
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
