@@ -2,7 +2,7 @@
 
 set -xeuo pipefail
 
-git clone https://github.com/izzqz/fluxgym-noob.git
+git clone https://github.com/izzqz/fluxgym-noob.git fluxgym
 cd fluxgym
 git clone -b sd3 https://github.com/kohya-ss/sd-scripts
 
